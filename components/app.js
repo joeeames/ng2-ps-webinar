@@ -12,9 +12,7 @@ import {TodoList} from 'components/todo-list';
 export class TodoApp {
 	constructor() {
 	}
-  onCompleted() {
-    console.log('completed', arguments)
-  }
+	// other methods
 }
 
 bootstrap(TodoApp);

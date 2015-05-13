@@ -12,13 +12,12 @@ import {todoItems} from 'services/todoItems';
 	templateUrl: 'components/new-item.html'
 })
 export class NewItem {
-	constructor(@Inject('todoItems') todoItems) {
-    this.items = todoItems
+	constructor(@Inject('todoItems') todoItemList) {
+    this.items = todoItemList
 	}
 	keyPressed($event, input) {
 		if($event.which === 13) {
 			this.addItem(input);
-			input.value = '';
 		}
 	}
 	addItem(input) {
