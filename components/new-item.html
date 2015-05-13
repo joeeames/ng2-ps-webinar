@@ -1,0 +1,7 @@
+<div class="form-inline">
+	<div class="form-group">
+		<label for="desc">New Item</label>
+		<input id="desc" class="form-control" #desc (keyup)="keyPressed($event, desc)">
+	</div>
+	<button class="btn btn-primary" type="button" (click)="addItem(desc)">Add Item</button>
+</div>

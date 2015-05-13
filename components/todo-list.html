@@ -1,0 +1,8 @@
+<div style="margin-bottom:10px">
+	<h1>To Do</h1>
+	<div style="padding:5px" *for="var item of items">
+			<input type="checkbox" #chkbox [checked]="item.completed" (click)="setCompleted(item, chkbox.value)">
+			{{item.text}} <a class="glyphicon glyphicon-remove" (click)="removeItem(item)"></a>
+	</div>	
+	<button *if="items.length > 1" class="btn btn-xs btn-warning" (click)="completeAll()">Complete All</button>
+</div>

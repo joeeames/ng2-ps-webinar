@@ -1,0 +1,2 @@
+var todoItems = [];
+export {todoItems};
